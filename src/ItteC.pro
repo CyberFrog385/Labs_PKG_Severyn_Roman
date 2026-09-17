@@ -26,6 +26,8 @@ HEADERS += \
 FORMS += \
     MainWindow.ui
 
+win32: RC_FILE = ItteC.rc
+
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
